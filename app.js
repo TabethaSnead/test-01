@@ -21,17 +21,40 @@ document.getElementById("buttonAdd").onclick = function(){
     // const sum =  inputAdd + inputAdd2;
     const sum = Number(inputAdd) + Number(inputAdd2);
     noLetters(sum)
-    
-    
     resultSpan.textContent = sum;
     console.log(inputAdd)
     
 }
-addition.addEventListener('click', ()=>{
-    
-})
 
+document.getElementById("buttonMult").onclick = function(){
+    const inputMult = document.getElementById("inputMult").value;
+    const inputMult2 = document.getElementById("inputMult2").value;
+    const resultSpan = document.getElementById("multResult")
+    const product = inputMult * inputMult2;
+    resultSpan.textContent = product;
+    noLetters(product)
+    console.log(product)
+}
 
+document.getElementById("buttonDivi").onclick = function(){
+    const inputDivid = document.getElementById("inputDivid").value;
+    const inputDivid2 = document.getElementById("inputDivid2").value;
+    const resultSpan = document.getElementById("diviResult");
+    const quotient = inputDivid / inputDivid2;
+    resultSpan.textContent = quotient;
+    noLetters(quotient)
+    console.log(inputDivid2)
+}
+
+document.getElementById("buttonMod").onclick = function(){
+    const inputMod = document.getElementById("inputMod").value;
+    const inputMod2 = document.getElementById("inputMod2").value;
+    const resultSpan = document.getElementById("modResult");
+    const modProduct = inputMod % inputMod2;
+    resultSpan.textContent = modProduct;
+    noLetters(modProduct)
+    console.log(modProduct)
+}
 
 
 
