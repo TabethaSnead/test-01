@@ -1,0 +1,11 @@
+.header1{
+    text-size-adjust: 200px;
+}
+
+h1{
+    background-color: gray;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
